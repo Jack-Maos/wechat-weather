@@ -34,7 +34,7 @@ App({
     })
   },
   globalData: {
-    key:'b2db20cd5e3643d88f9855b1f61a82fb',//和风天气的key
+    key:'',//和风天气的key
     cityId:'',//选择的城市
     cityName:'',//城市名
     getLocation:'',//自动获得的地理位置
