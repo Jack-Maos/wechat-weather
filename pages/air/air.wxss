@@ -1,0 +1,85 @@
+
+swiper{
+  height: 1470rpx;
+  width: auto;
+  background-size: cover;
+
+}
+.card{
+  width: 660rpx;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.block{
+  border-radius: 40rpx;
+  width: 660rpx;
+  height: 400rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.block view{
+  width: 220rpx;
+  height: 400rpx;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.img{
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  width: 120rpx; 
+  height: 120rpx;
+}
+.pre{
+  text-align:center; 
+  font-size: 35rpx;
+}
+
+/*马灯效果*/
+@keyframes around {
+  from {
+   margin-left: 100%;
+  }
+  to {
+   /* var接受传入的变量 */
+   margin-left: var(--marqueeWidth--);
+  }
+ }
+ 
+.marquee_container{
+  background-color: #7479b8;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+  width: 100%;
+  margin-top:0rpx;
+}
+.marquee_container:hover{
+  /* 不起作用 */
+  animation-play-state: paused;
+}
+.marquee_text{
+  color:#fff;
+  font-size: 28rpx;
+  height: 50rpx;
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: around;
+  animation-duration: 10s;  /*过渡时间*/
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+

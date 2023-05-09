@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/weather/weather",
+    "pages/city/city",
+    "pages/air/air"
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F5FFFA",
+    "navigationBarTitleText": "天气预报",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于天气预报定位" 
+    }
+  },
+  "tabBar": {
+    "color": "#b6b6b6",
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/foot-nav01.png",
+        "selectedIconPath": "images/foot-nav01-hover.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "iconPath": "images/foot-nav02.png",
+        "selectedIconPath": "images/foot-nav02-hover.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/city/city",
+        "iconPath": "images/foot-nav03.png",
+        "selectedIconPath": "images/foot-nav03-hover.png",
+        "text": "城市"
+      },
+      {
+        "pagePath": "pages/air/air",
+        "iconPath": "images/foot-nav04.png",
+        "selectedIconPath": "images/foot-nav04-hover.png",
+        "text": "空气指数"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

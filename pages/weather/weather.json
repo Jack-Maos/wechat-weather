@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天气",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

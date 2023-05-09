@@ -1,0 +1,53 @@
+<!--pages/weather1/weather1.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(255, 255, 255, .3)">
+  <swiper-item class="card2 card">
+    <view class="marquee_container" style="--marqueeWidth--:-40em">
+      <view class="marquee_text">{{t_tips}}</view>
+    </view>
+    <!-- 模块一  空气质量 质量指数 指数等级-->
+    <view class="block1 block">
+      <view>
+        <image class="img" src="../../images/wind.png"></image>
+        <text>空气质量：{{t_air_level}}</text>
+      </view>
+      <view>
+        <image class="img" src="../../images/air-quality-sensor.png"></image>
+        <text>质量指数：{{t_air}}</text>
+      </view> 
+      <view>
+        <image class="img" src="../../images/windy.png"></image>
+        <text>指数等级：{{t_category}}</text>
+      </view>
+    </view>
+    <!-- 模块二 主要污染物 PM2.5 二氧化硫-->
+    <view class="block2 block">
+      <view>
+        <image class="img" src="../../images/air-pollution (1).png"></image>
+        <text>主要污染物：{{t_primary}}</text>
+      </view>
+      <view>
+        <image class="img" src="../../images/air-pollution.png"></image>
+        <text>PM2.5：{{t_pm25}}</text>
+      </view>
+      <view>
+        <image class="img" src="../../images/so2.png"></image>
+        <text>二氧化硫：{{t_so2}}</text>
+      </view>
+    </view>
+    <!-- 模块三 二氧化氮 臭氧 一氧化碳-->
+    <view class="block3 block">
+      <view>
+        <image class="img" src="../../images/bus.png"></image>
+        <text>二氧化氮：{{t_no2}}</text>
+      </view>
+      <view>
+        <image class="img" src="../../images/ozone.png"></image>
+        <text>臭氧：{{t_o3}}</text>
+      </view>
+      <view>
+        <image class="img" src="../../images/carbon-monoxide.png"></image>
+        <text>一氧化碳:{{t_co}}</text>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,36 @@
+<!--pages/city/city.wxml-->
+<view class="the-content">
+  <view class="the-search">
+    <view class="ser-com">
+      <view class="ser-inp">
+        <input class="inp" type="text" placeholder="请输入您要搜索的城市名" confirm-type='search'
+         value="{{location}}"  bindinput='bindInput' bindconfirm='bindConfirm'/>
+      </view>
+      <view class="cancle-btn" bindtap='resetValues'>取消</view>
+    </view>
+  </view>
+  <view class="the-urban" wx:if="{{!isShow}}">
+    <view class="ur-thead">猜您想找</view>
+    <view class="urban-list">
+      <block wx:for='{{likeCityList}}' wx:for-item='v' wx:key='k'>
+        <view class="item" data-id='{{v.id}}' data-name='{{v.name}}' bindtap="bindChoose">
+          <text class="ti">{{v.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="the-city" wx:if="{{isShow}}">
+    <view class="city-list"  wx:if="{{cityList.length>0}}">
+      <block wx:for='{{cityList}}' wx:for-item='v' wx:key='k'>
+        <view class="item" data-id='{{v.id}}' data-name='{{v.name}}' bindtap="bindChoose">
+          <text class="ti">{{v.name}}，{{v.adm2}}，{{v.adm1}}</text>
+        </view>
+      </block>
+    </view>
+    <view wx:else>
+      <view class="none-ti">您搜索的城市名不存在哦，请重新输入～</view>
+    </view>
+  </view>
+
+</view>

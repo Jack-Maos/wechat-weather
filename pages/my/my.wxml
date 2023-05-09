@@ -1,0 +1,11 @@
+<!--pages/my/my.wxml-->
+<view class="the-my">
+  <view class="pic">
+    <image class="img" src="{{myInfo.avatar}}"></image>
+  </view>
+  <view class="txt">
+    <view class="t1">{{myInfo.classes}}</view>
+    <view class="t2">{{myInfo.name}}</view>
+    <view class="t3">{{myInfo.number}}</view>
+  </view>
+</view>
